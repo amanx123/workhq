@@ -1,4 +1,5 @@
 import { QUICK_ACTIONS } from "@/lib/constants";
+import { LogoutButton } from "./logout-button";
 
 export function Header() {
   return (
@@ -26,6 +27,7 @@ export function Header() {
             <span className="hidden sm:inline">{action.cmd}</span>
           </button>
         ))}
+        <LogoutButton />
         <div className="ml-2 flex h-8 w-8 items-center justify-center rounded-full border border-[#00ff41]/30 bg-[#00ff41]/5">
           <div className="animate-pulse-slow h-2 w-2 rounded-full bg-[#00ff41]" />
         </div>
